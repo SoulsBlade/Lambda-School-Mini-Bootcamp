@@ -1,6 +1,9 @@
 body{
   background-color: black;
   margin: 0 0 0 0;
+   /*Static alternative 
+   height: 870px; */
+  height: 100vh;
 }
 
 .header{
