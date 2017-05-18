@@ -1,1 +1,51 @@
-Placeholder
+body{
+  background-color: black;
+
+  /*Static alternative
+  height:870px;
+  margin: 40px 0 40px 0;*/
+
+  height: 92vh;
+  margin: 4vh 0 4vh 0;
+}
+
+.bodyHeader{
+  background-color: red;
+  width: 49%;
+  height: 14%;
+  margin: auto;
+}
+
+.bodyCont{
+  width: 49%;
+  height: 72%;
+    margin: auto;
+}
+
+.bodyLeft{
+  background-color: blue;
+  width: 33.33%;
+  height: 100%;
+  float: left;
+}
+
+.bodyCenter{
+  background-color: purple;
+  width: 33.33%;
+  height: 100%;
+  float: left;
+}
+
+.bodyRight{
+  background-color: yellow;
+  width: 33.33%;
+  height: 100%;
+  float: left;
+}
+
+.bodyFooter{
+    background-color: green;
+    width: 49%;
+    height: 14%;
+    margin: auto;
+}
