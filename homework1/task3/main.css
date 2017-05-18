@@ -1,1 +1,62 @@
-Placeholder
+body{
+  background-color: black;
+
+  /*height:870px;*/
+  height:100vh;
+  width: 41%;
+  margin: auto;
+}
+
+.bodyHeader{
+  background-color: purple;
+  height:11.5%;
+}
+
+.bodyCont{
+  background-color: white;
+  height: 88.5%;
+  overflow: hidden;
+}
+
+.bodyFeed{
+  background-color: red;
+  height: 100%;
+  width: 70%;
+  margin: auto;
+  position: relative;
+}
+
+.article{
+  background-color: blue;
+  height: 23%;
+  width: 61.5%;
+  position: absolute;
+  left:15%;
+  padding: 4% 5% 0 4%;
+}
+
+#art1{
+  top:7.5%;
+}
+
+#art2{
+  top:37%;
+}
+
+#art3{
+  top:66.5%;
+}
+
+ .image{
+  background-color: yellow;
+  height: 55%;
+  width: 31.5%;
+  float: left;
+}
+
+.newstitle{
+  background-color: green;
+  height: 78%;
+  width: 63.5%;
+  float: right;
+}
