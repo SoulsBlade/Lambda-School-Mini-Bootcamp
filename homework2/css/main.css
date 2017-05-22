@@ -1,0 +1,380 @@
+body{
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  body{
+    width: 100%;
+    }
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #d1d1d1;
+}
+
+p{
+  line-height: 1.5;
+  margin: 30px 0;
+}
+
+blockquote{
+    margin: 0;
+    font-size: 17.5px;
+    font-style: italic;
+    color: #777;
+    padding: 10px 25px;
+    border-left: 5px solid #eee;
+}
+
+figure{
+  margin: 0;
+}
+
+figcaption{
+  font-family: Lora,'Times New Roman',serif;
+  font-style: italic;
+  font-size: 14px;
+  color: #777;
+  padding:10px;
+  text-align: center;
+}
+
+img{
+  width: 100%;
+}
+
+h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+.nav{
+  width: 100%;
+  float: left;
+  padding: 10px 0;
+  font-weight: 800;
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: white;
+  transition: all .25s;
+  animation-name: slideback;
+  animation-duration: .25s;
+}
+
+@media (max-width: 767px) {
+  .nav{
+    height: 36px;
+    overflow: hidden;
+    width: calc(100% - 40px);
+    padding: 18px 20px 8px 20px;
+    font-weight: 800;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #777;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    transition: none;
+  }
+}
+@media (max-width: 767px) {
+  .nav a:hover{
+    color: #333;
+  }
+}
+
+.navLeft{
+  float: left;
+  font-size: 18px;
+  margin: 8px 20px;
+}
+
+@media (max-width: 767px) {
+  .navLeft{
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 -20px;
+    height: 44px;
+    border-bottom: 1px solid #e7e7e7;
+  }
+}
+
+.menuButton{
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .menuButton{
+    display:inline;
+    float: right;
+    margin-top: -5.5px;
+    padding: 8px;
+    border: 1px solid #e7e7e7;
+    border-radius: 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 767px) {
+  .expanded{
+    height: 196px;
+    animation-name: menuexpand;
+    animation-duration: 1s;
+  }
+}
+
+@media (max-width: 767px) {
+  .retracted{
+    height: 36px;
+    animation-name: menuretract;
+    animation-duration: 1s;
+  }
+}
+
+@media (max-width: 767px) {
+  .menuButton:hover{
+    background-color: #e7e7e7;
+  }
+}
+
+.navRight{
+  float: right;
+  text-align: center;
+  margin: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 767px) {
+  .navRight{
+    float: left;
+    width: 100%;
+    text-align: left;
+    padding: 0 20px;
+    margin: 0 -20px;
+    height: 44px;
+  }
+}
+
+.navRight ul{
+  list-style-type: none;
+}
+
+@media (max-width: 767px) {
+  .navRight ul{
+    padding: 0;
+  }
+}
+
+.navRight li{
+  display: inline-block;
+  padding: 0 20px 0 16px;
+}
+
+@media (max-width: 767px) {
+  .navRight li{
+    display: block;
+    padding: 0 0 20px 0;
+  }
+}
+
+.nav-scrolled{
+  position: fixed;
+  width: 100%;
+  padding: 10px 0;
+  font-weight: 800;
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.90);
+  border-bottom: 1px solid #eee;
+  animation-name: slide;
+  animation-duration: .5s;
+}
+
+.nav-scrolled a:hover{
+  color: #0085A1
+}
+
+.nav-reversed{
+  position: fixed;
+  width: 100%;
+  padding: 10px 0;
+  font-weight: 800;
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.90);
+  border-bottom: 1px solid #eee;
+  animation-name: slidereverse;
+  animation-duration: .5s;
+  top: -100px;
+}
+
+.jumboContainer{
+  background-color: black;
+  background-image: url("http://wallpaper-gallery.net/images/space-pics/space-pics-18.jpg");
+/*   background-image: url("../img/jumbobg.jpg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+  .jumboContainer{
+    background-position: top;
+    padding-top: 62px;
+  }
+}
+
+.transBox{
+  background-color: rgba(90, 50, 185, 0.3);
+}
+
+@media (max-width: 767px){
+  .transBox{
+    padding: 0 25px;
+  }
+}
+
+.jumboContent{
+  max-width: 767px;
+  margin: auto;
+  font-weight: 800;
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: white;
+  padding: 150px 20px;
+}
+
+@media (max-width: 767px) {
+  .jumboContent {
+    width: 100%;
+    padding: 50px 0;
+    }
+}
+
+.title{
+  font-size: 55px;
+  line-height: 55px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 767px) {
+  .title {
+  font-size: 35px;
+  line-height: 35px;
+  }
+}
+
+.subTitle{
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .subTitle {
+  font-size: 24px;
+    }
+}
+
+.postDetails{
+  font-family: Lora,'Times New Roman',serif;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.postDetails a:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.postContainer{
+  background-color: white;
+}
+
+@media (max-width: 767px) {
+  .postContainer {
+    padding: 0 25px;
+    }
+}
+
+.postContent{
+  max-width: 767px;
+  margin: auto;
+  font-family: Lora,'Times New Roman',serif;
+  font-size: 20px;
+  padding: 50px 20px;
+}
+
+@media (max-width: 767px) {
+  .postContent {
+    width: 100%;
+    padding: 50px 0;
+    }
+}
+
+.footerContainer{
+      border-top: 1px solid #eee;
+      height: 250px;
+      margin: auto;
+}
+
+.socialMedia{
+  max-width: 767px;
+  margin: 75px auto auto auto;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .socialMedia {
+    width: 100%;
+    }
+}
+
+.fa-stack{
+ color: #333;
+ margin-right:10px;
+}
+
+.fa-stack:hover{
+ color: #0085A1;
+}
+
+.copyright{
+  max-width: 767px;
+  margin: 30px auto auto auto;
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+  font-family: Lora,'Times New Roman',serif;
+}
+
+@media (max-width: 767px) {
+  .copyright {
+    width: 100%;
+    }
+}
+
+@keyframes slide {
+    from {top: -100px;}
+    to {top: 0px;}
+}
+
+@keyframes slidereverse {
+    from {top: 0px;}
+    to {top: -100px;}
+}
+
+@keyframes menuexpand {
+    from {height: 36px;}
+    to {height: 196px;}
+}
+
+@keyframes menuretract {
+    from {height: 196px;}
+    to {height: 36px;}
+}
